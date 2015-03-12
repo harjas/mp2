@@ -24,8 +24,10 @@ imdbApp.service('dataService', function($http) {
     };
 
     var detailData = function(movieId, cb){
-    	console.log(movieId.rank);
-    	cb(allMovieData[movieId.rank-1]);
+    	//$http.get('data/imdb250.json').success(function(data) {
+	    	console.log(movieId.rank);
+	    	cb(allMovieData[movieId.rank-1]);
+	    //});
     }
 
     var galleryData = function(cb){
