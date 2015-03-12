@@ -2,22 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MP2 Starter</title>
+  <title>MP2</title>
   <script src="./lib/angular/angular.min.js"></script>
   <script src="./js/controllers.js"></script>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./foundation/css/foundation.css">
+  <link rel="stylesheet" type="text/css" href="./lib/owl.carousel/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
   
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
 
 <body>
-
-	<nav class="top-bar" data-topbar role="navigation">
+	<div class="contain-to-grid sticky">
+	<nav class="top-bar lol" data-topbar role="navigation">
 	  <ul class="title-area">
 	    <li class="name">
-	      <h1><a href="#">MP2</a></h1>
+	      <h1><a href="#">Auteurs of Cinema</a></h1>
 	    </li>
 	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -25,36 +28,127 @@
 
 	  <section class="top-bar-section">
 	    <!-- Left Nav Section -->
-	    <ul class="left">
-	      <li><a href="https://courses.engr.illinois.edu/cs498rk1/index.html">CS498RK</a></li>
+	    <ul class="right">
+	      <li id="sec-1"><a href="#section1">Alfred Hitchcock</a></li>
+	      <li id="sec-2"><a href="#section3">Stanley Kubrick</a></li>
+	      <li id="sec-3"><a href="#owl-demo">Modern Day</a></li>
 	    </ul>
 	  </section>
 	</nav>
+	</div>
 
-	<div class="row" ng-app = "demoApp">
-		<div class="panel small-centered columns small-12 medium-4">
-    	<input id="nameInput" ng-model="name" placeholder="Your Name" autofocus>
-	
-		<h3>Hello, {{name}}</h3>
-
+	<div class="fixed-div bg-1" id="section1" data-interchange="[./data/cinema/shower-large.jpg, (default)], [./data/cinema/shower-medium.jpg, (medium)], [./data/cinema/shower-small.jpg, (small)]">
+		<div class="cont-wrapper">
+			<div class="fixed-div-content">
+				<div class="alfred"><h1>Alfred Hitchcock</h1></div>
+			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="alert columns small-12 large-6">
-			<div><img src="http://lorempixel.com/400/200/cats" /></div>
 
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
+	<div class="scrolling-div" id="section2">
+		<div class="row">
+			<div class="small-12 large-6 column" ><p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi, mollitia, repellendus sapiente repudiandae labore rerum amet culpa inventore, modi non. Quo nisi veritatis vitae nam, labore fugit. Inventore culpa iusto, officia exercitationem. Voluptates quibusdam odit odio incidunt consequatur, consectetur aspernatur optio vitae molestias, quas repellendus fugit ullam
+			</p></div>	
+			<div class="small-12 large-6 column"><p>
+			 eligendi et dignissimos voluptatibus illum? Molestias aliquam nostrum quasi ipsa culpa, iusto explicabo ut error, consequuntur enim temporibus, adipisci tempora voluptate, id consequatur mollitia eveniet blanditiis. Illo quod repellendus alias? Cum rem doloremque adipisci accusantium? Saepe, necessitatibus! Illo quod repellendus alias? Cum rem doloremque adipisci accusantium? Saepe, necessitatibus!
+			</p></div>
 		</div>
-		<div class="columns small-12 large-6">
-	  	<div><img src="http://lorempixel.com/400/200/nature" />	</div>
-	  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!</div>
 	</div>
- 
 
+	<div class="fixed-div bg-2" id="section3">
+		<div class="cont-wrapper">
+			<div class="fixed-div-content">
+				<div class="kubrick">
+					<h1>Stanley Kubrick</h1>
+					<a href="#" data-reveal-id="videoModal" class="radius button">Example Modal w/Video</a>
+					<div id="videoModal" class="reveal-modal large" data-reveal="">
+					<h2>This modal has video</h2>
+					<div class="flex-video widescreen vimeo" style="display: block;">
+					<iframe width="1280" height="720" src="http://www.youtube-nocookie.com/embed/wnXCopXXblE?rel=0" frameborder="0" allowfullscreen="" data-src="http://www.youtube-nocookie.com/embed/wnXCopXXblE?rel=0"></iframe>
+					</div>
+					<a class="close-reveal-modal">&#215;</a>
+					</div>
 
-  <script src="./js/script.js"></script>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="scrolling-div" id="section4">
+		<div class="row">
+			<div class="small-12 large-6 column" ><p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi, mollitia, repellendus sapiente repudiandae labore rerum amet culpa inventore, modi non. Quo nisi veritatis vitae nam, labore fugit. Inventore culpa iusto, officia exercitationem. Voluptates quibusdam odit odio incidunt consequatur, consectetur aspernatur optio vitae molestias, quas repellendus fugit ullam
+			</p></div>	
+			<div class="small-12 large-6 column"><p>
+			 eligendi et dignissimos voluptatibus illum? Molestias aliquam nostrum quasi ipsa culpa, iusto explicabo ut error, consequuntur enim temporibus, adipisci tempora voluptate, id consequatur mollitia eveniet blanditiis. Illo quod repellendus alias? Cum rem doloremque adipisci accusantium? Saepe, necessitatibus! Illo quod repellendus alias? Cum rem doloremque adipisci accusantium? Saepe, necessitatibus!
+			</p></div>
+		</div>
+	</div>
+
+	<div id="owl-demo" class="owl-carousel owl-theme">
+	  <div class="item">
+	  	<img src="./data/cinema/memento.jpg">
+		<h1><span class="nolan">Christopher Nolan</span></h1>
+	  </div>
+	  <div class="item">
+	  	<img src="./data/cinema/fightclub.jpg">
+		<h1><span class="fincher">David Fincher</span></h1>
+	  </div>
+	  <div class="item">
+	  	<img src="./data/cinema/tarantino.jpg">
+		<h1><span class="tarantino">Quentin Tarantino</span></h1>
+	  </div>
+	  <div class="item">
+	  	<img src="./data/cinema/wes.png">
+		<h1><span class="wes">WES ANDERSON</span></h1>
+	  </div>
+	  <div class="item">
+	  	<img src="./data/cinema/spike.jpeg">
+		<h1><span class="spike">Spike Jonze</span></h1>
+	  </div>
+	</div>
+
+	<footer>
+		<div class="container" id="section-4">
+            <div class="row">
+                <div class="col-1 large-4 medium-8 small-12 column">
+                    <h3>Created by:</h3>
+                    <p>Harjas Singh<br>Computer Science<br>UIUC</p>
+                </div>
+                <div class="col-2 large-4 medium-8 small-12 column">
+                    <ul class="list-inline">
+                        <li> 
+                            <a href="#"><i class="fa fa-facebook-official fa-2x"></i></a>
+                        </li>
+                        <li> 
+                            <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                        </li>
+                        <li> 
+                            <a href="#"><i class="fa fa-github-square fa-2x"></i></a>
+                        </li>
+                        <li> 
+                            <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+                        </li>
+
+                        <li> 
+                            <a href="#"><i class="fa fa-whatsapp fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3 large-4 medium-8 small-12 column">
+                    <h3>"QOTD"</h3>
+                    <p>Cinema is truth 24 times a second</p>
+                    <p id="jlg">-Jean Luc Goddard</p>
+                </div>
+            </div>
+        </div>
+	</footer>
+
   <script src="./lib/jquery-2.1.3.min/index.js"></script>
   <script src="./foundation/js/foundation.min.js"></script>
+  <script src="./lib/owl.carousel/owl-carousel/owl.carousel.min.js"></script>	
+  <script src="./js/script.js"></script>			
   <script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>

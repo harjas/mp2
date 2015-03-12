@@ -1,0 +1,29 @@
+<div class="details">
+	<div class="nav-options">
+		<h1> IMDb Search Directory</h1>
+		<a href="imdb250.html#/list">Search</a>
+		<a href="imdb250.html#/gallery">Gallery</a> <br>
+	</div>
+	<!-- <a ng-click="reverse='false'">Asc</a>
+	<a ng-click="reverse='reverse!=reverse'">Desc</a><br> -->
+
+	<div class="movie-details">
+		<span class="title">{{movie.title}}</span><br>
+		<span class="rank">Rank: {{movie.rank}}</span><br>
+		<div class="movie">
+			<div class="im" style="float:left; width:200px;"><img style="height:80%; width:80%" src="data/images/{{movie.imdbID}}.jpg"></div>
+	      	<div class="det">
+	      		<span>{{movie.plot}}</span><br><br>
+	      		<span><strong>Released:</strong> {{movie.released}}</span><br>
+	      		<span><strong>Runtime:</strong> {{movie.runtime}}</span><br>
+	      		<span><strong>Awards:</strong> {{movie.awards}}</span><br>
+	      		<span><strong>Director:</strong> {{movie.director[0]}}</span><br>
+	      	</div>
+		</div>
+	</div>
+
+	<div class="prev-next">
+		<a href="imdb250.html#/details/{{movie.rank-1}}" class="radius button">Prev</a>
+		<a href="imdb250.html#/details/{{movie.rank+1}}" class="radius button">Next</a>
+	</div>
+</div>

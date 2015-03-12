@@ -4,3 +4,259 @@
 @import "variables";
 @import "mixins";
 @import "base";
+@import "foundation/components/top-bar";
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+
+@font-face {
+    font-family: "hitchcock";
+    src: url("../data/hitchcock.ttf") format("truetype");
+}
+@font-face {
+    font-family: "kubrick";
+    src: url("../data/kubrick.ttf") format("truetype");
+}
+@font-face {
+    font-family: "fincher";
+    src: url("../data/fight.ttf") format("truetype");
+}
+@font-face {
+    font-family: "tarantino";
+    src: url("../data/reservoirdogs.ttf") format("truetype");
+}
+@font-face {
+    font-family: "wes";
+    src: url("../data/futura.ttf") format("truetype");
+}
+.sticky{
+	position: fixed;
+	z-index: 3;
+	font-family: "hitchcock";
+	opacity: 0.85;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.right a{
+	font-family: 'Roboto';
+}
+
+.fixed-div{
+	width:100%;
+	height:680px;
+	display:table;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: 1;
+	background-attachment: fixed;
+	
+	.cont-wrapper{
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.fixed-div-content{
+		margin:0 auto;
+
+		.alfred h1{
+			text-align: center;
+			font-family: "hitchcock", sans-serif;
+			color:white;
+			font-size: 60px;
+			text-shadow: 5px 5px #000000;
+		}
+
+		.kubrick h1{
+			text-align: center;
+			font-family: "kubrick", sans-serif;
+			color:white;
+			font-size: 60px;
+			text-shadow: 2px 2px #000000;
+		}
+	}
+}
+
+.scrolling-div{
+	width:100%;
+	z-index: 3;
+	background-color: #404040;
+	color:white;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+
+	.row{
+		padding:40px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 100;
+
+		p{
+			line-height: 240%;
+		}
+	}
+}
+/*#owl-demo{
+	z-index:1;
+	height:680px;
+}*/
+
+#owl-demo .item{
+
+	.nolan{
+		font-family: "Palatino Linotype", sans-serif;
+		/*font-size:60px;*/
+	}
+
+	.fincher{
+		font-family: "fincher", sans-serif;
+		/*font-size:72px;*/
+	}
+	.tarantino{
+		font-family: "tarantino", sans-serif;
+		/*font-family:42px;*/
+	}
+	.wes{
+		font-family: "wes", sans-serif;
+		/*font-size: 60px;*/
+	}
+
+	.spike{
+		font-family: 'Roboto', sans-serif;
+		/*font-size:60px;*/
+	}
+}
+
+#owl-demo .item img{
+    display:block;
+    width: 100%;
+    height:768px;
+}
+
+#owl-demo .item h1{
+   position: absolute; 
+   top: 60px; 
+   left: 10px; 
+   width: 100%;
+   /*text-align: center;*/
+   /*line-height: 340px;*/
+
+   span { 
+	   color: white;
+	   /*font-size: 60px; */
+	   /*font: bold Helvetica, Sans-Serif; */
+	   letter-spacing: -1px;  
+	   background: rgb(0, 0, 0);
+	   background: rgba(0, 0, 0, 0.7);
+	   padding: 10px;
+	}
+}
+
+.fa-chevron-left{
+	position:absolute;
+    top:340px;
+    left:0;
+	margin-left:20px;
+	color:white;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.fa-chevron-right{
+	position:absolute;
+    top:340px;
+    right:0;
+	margin-right:20px;
+	color:white;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.fa:hover{
+	color:#AAAAAA;
+}
+
+.fixed-div.bg-1{
+	background-image: url("../data/cinema/shower-large.jpg");
+}
+.fixed-div.bg-2{
+	background-image: url("../data/cinema/2001.jpg");
+}
+
+.list-inline li{
+	text-align: center;
+	margin-top:10px;
+	display:inline-block;
+}
+
+.fa{
+	margin-left:20px;
+	color:white;
+}
+.fa:hover{
+	color:#AAAAAA;
+}
+
+footer {
+	width:100%;
+	padding: 4em 0;
+	box-shadow: 0 0 50px rgba(0,0,0,0.5);
+	z-index: 2;
+	background-color:rgba(64,64,64,0.95);
+	color:white;
+	font-family: 'Roboto';
+
+	.row div{
+		float:left;
+		width:33%;
+
+		h3{
+			color:white;
+			font-family: 'Roboto';
+			text-decoration: underline;
+		}
+	}
+
+	.row{
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+}
+
+.col-1{
+	text-align:center;
+
+	h3{
+		font-size: 28px;
+	}
+
+	p{
+		margin-top:15px;
+		font-size:20px;
+	}
+}
+
+.col-2{
+	text-align:center;
+
+	h3{
+		font-size: 28px;
+	}
+}
+
+.col-3{
+	text-align:center;
+
+	h3{
+		font-size:28px;
+	}
+
+	p{
+		margin-top: 10px;
+		font-size:20px;
+	}
+}
+
+.jlg{
+	font-size:14px;
+}
+
+@media only screen and (max-width: 320px) {
+
+   body { font-size: 2em; }
+
+}

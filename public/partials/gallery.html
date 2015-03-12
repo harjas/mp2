@@ -1,0 +1,50 @@
+<div class="gallery">
+	<div class="nav-options">
+		<h1> IMDb Search Directory</h1>
+		<a href="imdb250.html#/list">Search</a>
+		<a href="imdb250.html#/gallery">Gallery</a> <br>
+	</div>
+	<div class="genres">
+		<a class="button tiny" href="imdb250.html#/gallery">All</a>
+		<a class="button tiny" ng-click="sort='Action'">Action</a>
+		<a class="button tiny" ng-click="sort='Adventure'">Adventure</a>
+		<a class="button tiny" ng-click="sort='Comedy'">Comedy</a>
+		<a class="button tiny" ng-click="sort='Crime'">Crime</a>
+		<a class="button tiny" ng-click="sort='Drama'">Drama</a>
+		<a class="button tiny" ng-click="sort='Musical'">Musical</a>
+		<a class="button tiny" ng-click="sort='Mystery'">Mystery</a>
+		<a class="button tiny" ng-click="sort='Romance'">Romance</a>
+		<a class="button tiny" ng-click="sort='Sci-Fi'">Sci-Fi</a>
+		<a class="button tiny" ng-click="sort='Thriller'">Thriller</a>
+		<a class="button tiny" ng-click="sort='Western'">Western</a>
+	</div>
+
+	<div class="row">
+		<ul class="small-block-grid-8">
+			<li ng-repeat="movie in movies | filter:{genre:sort}">
+				<a href="imdb250.html#/details/{{movie.rank}}"><img src="data/images/{{movie.id}}.jpg"></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<!-- <div>
+	<div class="row">
+		<div class="columns small-12">
+			<ul class="inline-list">
+				<li ng-repeat="genre in genres">
+					<a class="button" ng-click="genreChange(genre)">{{genre}}</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+    
+	<div class="row">
+		<ul class="small-block-grid-4">
+			<li ng-repeat="movie in selectedMovies track by $index"  class="animation-fade view-frame">
+				<a ng-href="#/detail/{{movie.rank}}"><img ng-src="{{imgSource(movie.imdbID)}}"></a>
+			</li>
+		</ul>
+	</div>
+</div> -->
