@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "wes";
+    src: url("../data/futura.ttf") format("truetype");
+}
+.container{
+	width:50%;
+	margin:0 auto;
+	margin-top:40px;
+	border-radius: 10px;
+	border:1px;
+	background-color: #ccc;
+}
+
+.container h1{
+	text-align: center;
+	font-family: "wes";
+}
+.nav-options{
+	text-align: center;
+}
+
+.nav-options a{
+	padding:30px;
+}
+.nav-options a:hover{
+	text-decoration: underline;
+}
+
+.search-options a{
+	text-align: center;
+}
+
+.movie-search{
+	background-color: #cccccc;
+}
+
+.movie-search .search-bar{
+	display: block;
+	margin:0 auto;
+	margin-top:20px;
+	margin-bottom:30px;
+	padding:20px;
+	width:80%;
+}
+
+.movie-search .search-options{
+	text-align: center;
+}
+/*.mov-thumb {
+    float: left;
+}
+.mov-thumb img {
+    display: block;
+}*/
+
+/*.mov-details{
+	margin-left:30px;
+}*/
+
+ul{
+	list-style-type: none;
+}
+.results{
+	margin-top:10px;
+}
+.results li div{
+	display: inline-block;
+}
+
+.result{
+	width:100%;
+	transition: all .2s ease-in-out;
+}
+
+.result:hover{
+	transform: scale(1.2);
+	background: #ecf0f1;
+}
+
+.details{
+	width:50%;
+	margin:0 auto;
+	margin-top:40px;
+	border-radius: 10px;
+	border:1px;
+	background-color: #ccc;
+}
+
+.gallery{
+	width:80%;
+	margin:0 auto;
+	margin-top:40px;
+	border-radius: 10px;
+	border:1px;
+	background-color: #ccc;
+}
+
+.details h1, .gallery h1{
+	text-align: center;
+	font-family: "wes";
+}
+.movie-details{
+	margin-top:10px;
+	background: #ecf0f1;
+	font-family: "wes";
+	display:table;
+}
+.im, .det{
+	display: table-cell;
+}
+/*.movie div{
+	display: inline-block;
+}*/
+
+.movie-details .title{
+	font-size: 24px;
+}
+
+.details .prev-next {
+	text-align: center;
+}
+
+.details .prev-next a{
+	margin-top:20px;
+}
+
+.gal-view{
+	display:table;
+}
+
+.poster{
+	display:table-cell;
+}
+
+.genres {
+	text-align: center;
+}
+.pos{
+	width:100%;
+	transition: all .2s ease-in-out;
+}
+
+.pos:hover{
+	transform: scale(1.2);
+	background: #ecf0f1;
+}
