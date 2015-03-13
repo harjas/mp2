@@ -34,7 +34,7 @@ imdbApp.service('dataService', function($http) {
     	 $http.get('data/imdb250.json').success(function(data) {
     		var galData = [];
 	    	for(var i=0; i<data.length; i++){
-	    		galData.push({id: data[i].imdbID, rank:data[i].rank});
+	    		galData.push({id: data[i].imdbID, rank:data[i].rank, genre:data[i].genre});
 	    	}
 	    	cb(galData);
     	 });

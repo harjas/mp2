@@ -10,8 +10,9 @@
 		<div class="search-options">
 	        <input class="search-bar" type="text" ng-model="search" placeholder="Search for movie..." />
 	        <a ng-click="sort='title'"class="radius button">Title</a>
+	        <a ng-click="sort='-title'"class="radius button">Title Desc</a>
 	        <a ng-click="sort='rank'"class="radius button">Rank</a>
-
+	        <a ng-click="sort='-rank'"class="radius button">Rank Desc</a>
     	</div>	
 	</div>
 	<div class="results" ng-hide="!search">

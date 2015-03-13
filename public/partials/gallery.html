@@ -4,25 +4,25 @@
 		<a href="imdb250.html#/list">Search</a>
 		<a href="imdb250.html#/gallery">Gallery</a> <br>
 	</div>
-	<div class="genres">
-		<a class="button tiny" href="imdb250.html#/gallery">All</a>
-		<a class="button tiny" ng-click="sort='Action'">Action</a>
-		<a class="button tiny" ng-click="sort='Adventure'">Adventure</a>
-		<a class="button tiny" ng-click="sort='Comedy'">Comedy</a>
-		<a class="button tiny" ng-click="sort='Crime'">Crime</a>
-		<a class="button tiny" ng-click="sort='Drama'">Drama</a>
-		<a class="button tiny" ng-click="sort='Musical'">Musical</a>
-		<a class="button tiny" ng-click="sort='Mystery'">Mystery</a>
-		<a class="button tiny" ng-click="sort='Romance'">Romance</a>
-		<a class="button tiny" ng-click="sort='Sci-Fi'">Sci-Fi</a>
-		<a class="button tiny" ng-click="sort='Thriller'">Thriller</a>
-		<a class="button tiny" ng-click="sort='Western'">Western</a>
+	<div class="genres" style="margin-top:20px">
+		<a class="button tiny" ng-click="genreFilter=''">All</a>
+		<a class="button tiny" ng-click="genreFilter='action'">Action</a>
+		<a class="button tiny" ng-click="genreFilter='adventure'">Adventure</a>
+		<a class="button tiny" ng-click="genreFilter='comedy'">Comedy</a>
+		<a class="button tiny" ng-click="genreFilter='crime'">Crime</a>
+		<a class="button tiny" ng-click="genreFilter='drama'">Drama</a>
+		<a class="button tiny" ng-click="genreFilter='musical'">Musical</a>
+		<a class="button tiny" ng-click="genreFilter='mystery'">Mystery</a>
+		<a class="button tiny" ng-click="genreFilter='romance'">Romance</a>
+		<a class="button tiny" ng-click="genreFilter='sci-fi'">Sci-Fi</a>
+		<a class="button tiny" ng-click="genreFilter='thriller'">Thriller</a>
+		<a class="button tiny" ng-click="genreFilter='western'">Western</a>
 	</div>
 
 	<div class="row">
 		<ul class="small-block-grid-8">
-			<li ng-repeat="movie in movies | filter:{genre:sort}">
-				<a href="imdb250.html#/details/{{movie.rank}}"><img src="data/images/{{movie.id}}.jpg"></a>
+			<li ng-repeat="movie in movies | filter: genreFilter">
+				<div class="pos"><a href="imdb250.html#/details/{{movie.rank}}"><img src="data/images/{{movie.id}}.jpg"></a></div>
 			</li>
 		</ul>
 	</div>

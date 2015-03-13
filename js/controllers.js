@@ -14,11 +14,12 @@ imdbControllers.controller('detailsController', function(dataService, $scope, $r
 });
 
 imdbControllers.controller('galleryController', function(dataService, $scope){
+	// $scope.genreFilter = null;
+	// genreFilter = function(movie){
+	// 		var keyword = new RegExp($scope.genreFilter,'i');
+	// 		return !$scope.genreFilter || keyword.test(movie.genre);
+	// }
 	dataService.galleryData(function(data){
 		$scope.movies = data;
-		genreFilter = function(movie){
-			var keyword = new RegExp($scope.genreFilter,'i');
-			return !$scope.genreFilter || keyword.test(movie.genre);
-		}
 	});
 });
