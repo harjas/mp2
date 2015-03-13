@@ -1,6 +1,6 @@
 @font-face {
     font-family: "wes";
-    src: url("../data/futura.ttf") format("truetype");
+    src: url("./data/futura.ttf") format("truetype");
 }
 .container{
 	width:50%;
